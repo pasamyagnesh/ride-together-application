@@ -47,6 +47,9 @@ export const findRides = async (req, res, next) => {
   }
 }
 
+
+
+
 export const joinRide = async (req, res, next) =>{
   try{
     const ride = await Ride.findById(req.params.id);
@@ -72,18 +75,16 @@ export const joinRide = async (req, res, next) =>{
     next(err);
   }
 }
-
-export const createRide = async (req, res, next) =>{
-  try{
-    const newRide = new Ride({...req.body, creator: req.user.id});
-    await newRide.save()
+export const createRide = async (req, res, next) => {
+  try {
+    const newRide = new Ride({ ...req.body, creator: req.user.id });
+    await newRide.save();
     await User.findByIdAndUpdate(req.user.id, { $push: { ridesCreated: newRide._id } });
-    res.status(201).json(newRide)
-  }catch(err){
+    res.status(201).json(newRide);
+  } catch (err) {
     next(err);
   }
-}
-
+};
 export const updateRide = async(req, res, next) => {
   try{
     const { ...details } = req.body;

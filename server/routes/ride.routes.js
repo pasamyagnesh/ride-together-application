@@ -5,7 +5,7 @@ import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
 const router = express.Router()
 
 router.get("/", verifyAdmin, getAllRides)
-router.post("/", verifyToken, createRide)
+router.post("/", verifyToken, createRide);
 router.get("/find", findRides)
 
 router.get("/:id", getRide)

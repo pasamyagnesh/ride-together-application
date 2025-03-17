@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <h1 className="text-xl font-bold text-primary">
-            RideShare
+            RideTogether
           </h1>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-foreground">
@@ -23,17 +23,17 @@ const Footer = () => {
               aria-label="Our phone"
               title="Our phone"
             >
-              850-123-5021
+              +91 1234567890
             </a>
           </div>
           <div className="flex">
             <p className="mr-1 text-foreground">Email:</p>
             <a
-              href="mailto:info@rideshare.mail"
+              href="mailto:info@RideTogether.mail"
               aria-label="Our email"
               title="Our email"
             >
-              rideshare@gmail.com
+              RideTogether@123.com
             </a>
           </div>
           <div className="flex">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-        <p className="text-sm">&copy; Copyright 2024 RideShare.com | All rights reserved.</p>
+        <p className="text-sm">&copy; Copyright 2024 RideTogether.com | All rights reserved.</p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li><a href="/" className="text-sm">F.A.Q</a></li>
           <li><a href="/" className="text-sm">Privacy Policy</a></li>

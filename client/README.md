@@ -1,1 +1,1 @@
-# RideShare
+# RideTogether

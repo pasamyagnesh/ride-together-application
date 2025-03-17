@@ -34,7 +34,7 @@ const RideCard = ({details}) => {
           </Avatar>
           <span className="flex-grow flex flex-col pl-4">
             <span className="title-font font-medium">{creator.name}</span>
-            <span className="text-muted-foreground text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
+            <span className="text-muted-foreground text-xs tracking-widest mt-0.5">Human being</span>
           </span>
         </div>
       </div>

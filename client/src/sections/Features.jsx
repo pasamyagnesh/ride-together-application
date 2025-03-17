@@ -10,11 +10,11 @@ const Features = () => {
     {
       icon: <ShieldCheck />,
       title: "Join a trustworthy community",
-      desc: "Connect with like-minded people. Meet new people who share your interest and destination through carpooling."
+      desc: "Connect with like-minded people. Meet new people who share your interest and destination through RideTogether."
     },
     {
       icon: <Rocket />,
-      title: "Carpooling made simple",
+      title: "RideTogether made simple",
       desc: "Find rides with ease. Search for rides that match your destination, schedule, and preference with just a few taps."
     }
   ]

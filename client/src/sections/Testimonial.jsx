@@ -3,19 +3,19 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar"
 const Testimonial = () => {
   const feedback = [
     {
-      desc: "RideShare made my daily commute a breeze! The app is user-friendly, and I've most some wonderfuli people through carpooling. Thank you RideShare for providing such a fantastic service.",
+      desc: "RideTogether made my daily commute a breeze! The app is user-friendly, and I've most some wonderfuli people through RideTogether. Thank you RideTogether for providing such a fantastic service.",
       img: "https://dummyimage.com/106x106",
       user: "John",
       prof: "UI Developer"
     },
     {
-      desc: "Ever since I started using RideShare, my daily commute has transformed into a seamless and enjoyable experience. The convenience and reliability of this app have truly exceeded my expectations. The user-friendly interface makes booking a ride a breeze.",
+      desc: "Ever since I started using RideTogether, my daily commute has transformed into a seamless and enjoyable experience. The convenience and reliability of this app have truly exceeded my expectations. The user-friendly interface makes booking a ride a breeze.",
       img: "https://dummyimage.com/106x106",
       user: "Murphy",
       prof: "Backend Developer"
     },
     {
-      desc: "I just had to share my recent experience with RideShare because it has truly been a game-changer for me! From the easy sign-up process to the consistently reliable service, this app has quickly become my go-to for hassle-free transportation.",
+      desc: "I just had to share my recent experience with RideTogether because it has truly been a game-changer for me! From the easy sign-up process to the consistently reliable service, this app has quickly become my go-to for hassle-free transportation.",
       img: "https://dummyimage.com/106x106",
       user: "Murphy",
       prof: "Backend Developer"
