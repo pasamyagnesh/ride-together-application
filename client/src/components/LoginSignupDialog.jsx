@@ -19,7 +19,7 @@ const LoginSignupDialog = () => {
     event.preventDefault();
     dispatch({ type: 'LOGIN_START' });
     try {
-      const res = await axios.post(`${apiUri}/api/auth/login`, loginData, { withCredentials: true });
+      const res = await axios.post(`${apiUri}/auth/login`, loginData, { withCredentials: true });
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       setLoginData({ email: "", password: "" });
     } catch (err) {
@@ -27,17 +27,21 @@ const LoginSignupDialog = () => {
     }
   };
 
-  const handleSignup = async (event) => {
-    event.preventDefault();
-    dispatch({ type: 'LOGIN_START' });
-    try {
-      const res = await axios.post(`${apiUri}/api/auth/register`, signupData, { withCredentials: true });
-      dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-      setSignupData({ name: "", email: "", password: "" });
-    } catch (err) {
-      dispatch({ type: "LOGIN_FAILED", payload: err.response?.data || { message: "Failed to connect to the server." } });
-    }
-  };
+ const handleSignup = async (event) => {
+  event.preventDefault();
+  dispatch({ type: 'LOGIN_START' });
+  try {
+    const url = `${apiUri}/auth/register`;
+    console.log("Signup URL:", url); // Debug the URL
+    console.log("Signup Data:", signupData); // Debug the payload
+    const res = await axios.post(url, signupData, { withCredentials: true });
+    dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    setSignupData({ name: "", email: "", password: "" });
+  } catch (err) {
+    console.error("Signup Error:", err.response?.data || err.message);
+    dispatch({ type: "LOGIN_FAILED", payload: err.response?.data || { message: "Failed to connect to the server." } });
+  }
+};
 
   return (
     <Dialog>
